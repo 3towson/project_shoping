@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,500;1,500&display=swap');
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.navbar-item {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar {
+    padding: 2rem 4rem;
+    background-color: #000000;
+}
+
+/* p{
+    background-color: #000000;
+    color: #000000;
+} */
+
+.columns.is-full{
+    padding: 2px 11rem 3rem;
+    margin-right: 0px;
+}
+
+.column.is-one-third{
+    width: 300px;
+    height: 400px;
+}
+.column.is-one-third:hover{
+    transform: scale(1.04);
+}
+
+img {
+    /* object-fit: cover; */
+    width: 100%;
+    height: 15vw;
+}
+
+/* ตั้งค่ารูปลักษณ์ของปุ่ม */
+.button, .submit {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ตั้งค่ารูปลักษณ์เมื่อมีการ hover */
+.button:hover, .submit:hover {
+    background-color: #0056b3;
+}
+
+/* ตั้งค่ารูปลักษณ์ของลิงค์ในปุ่ม */
+.button a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}

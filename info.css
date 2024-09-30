@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,500;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.navbar-item {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar {
+    padding: 2rem 4rem;
+    background-color: #000000;
+}
+
+.columns.is-full{
+    padding: 7rem 7rem 4rem;
+}
+
+h1{
+    font-size: 30px;
+    
+}
+
+.column-right{
+    padding: 0 0 0;
+}
+
+.column-left{
+    border: solid 1px rgb(0, 0, 0);
+    padding: 10px;
+    display: inline-block;
+    text-align: left;
+}
+
+.column{
+    text-align: center;
+    font-size: 20px;
+}
+
+/* ตั้งค่ารูปลักษณ์ของปุ่ม */
+.button, .submit {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ตั้งค่ารูปลักษณ์เมื่อมีการ hover */
+.button:hover, .submit:hover {
+    background-color: #0056b3;
+}
+
+/* ตั้งค่ารูปลักษณ์ของลิงค์ในปุ่ม */
+.button a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+p{
+    text-align: left;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    font-size: 18px;
+}
+
+p input[type="text"], p input[type="email"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+select{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
