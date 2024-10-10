@@ -129,7 +129,6 @@
                             'price' => 2800,
                             'link' => 'online_shoping/img_adidas2/',
                         ],
-                        // Add more shoes as needed
                     ];
 
                     // Loop through shoes array and generate HTML

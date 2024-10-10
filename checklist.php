@@ -58,8 +58,8 @@
                     }
 
                     function checkcode($code) {
-                        // ตรวจสอบว่ารหัสมีความยาวมากกว่า 5 ตัวอักษรหรือไม่
-                        return (strlen($code) > 5) ? 1 : 0;
+                        // ตรวจสอบว่ารหัสมีความยาวมากกว่า 4 ตัวอักษรหรือไม่
+                        return (strlen($code) > 4) ? 1 : 0;
                     }
 
                     // ตรวจสอบว่าอีเมลมีโดเมนที่ถูกต้องหรือไม่
@@ -73,26 +73,26 @@
                     // แสดงข้อความเตือนถ้าข้อมูลไม่ถูกต้อง
                     if (!$isGmail && !$isHotmail && !$isCmu && $check_number == 0 && $check_code == 0) {
                         echo "<p style='color: red;'>Check Your Email. It should be @gmail.com, @hotmail.com, or @cmu.ac.th</p>";
-                        echo "<p style='color: red;'>Check your Number. It should be 10 digits long.</p>";
+                        echo "<p style='color: red;'>Check your Phone Number. It should be 10 digits long.</p>";
                         echo "<p style='color: red;'>Check your Code. It should be more than 5 characters.</p>";
                         $hasErrors = true;
                     } elseif (!$isGmail && !$isHotmail && !$isCmu && $check_number == 0) {
                         echo "<p style='color: red;'>Check Your Email. It should be @gmail.com, @hotmail.com, or @cmu.ac.th</p>";
-                        echo "<p style='color: red;'>Check Your Number. It should be 10 digits long.</p>";
+                        echo "<p style='color: red;'>Check Your Phone Number. It should be 10 digits long.</p>";
                         $hasErrors = true;
                     } elseif (!$isGmail && !$isHotmail && !$isCmu && $check_code == 0) {
                         echo "<p style='color: red;'>Check Your Email. It should be @gmail.com, @hotmail.com, or @cmu.ac.th</p>";
                         echo "<p style='color: red;'>Check Your Code. It should be more than 5 characters.</p>";
                         $hasErrors = true;
                     } elseif ($check_code == 0 && $check_number == 0) {
-                        echo "<p style='color: red;'>Check Your Number. It should be 10 digits long.</p>";
+                        echo "<p style='color: red;'>Check Your Phone Number. It should be 10 digits long.</p>";
                         echo "<p style='color: red;'>Check Your Code. It should be more than 5 characters.</p>";
                         $hasErrors = true;
                     } elseif (!$isGmail && !$isHotmail && !$isCmu) {
                         echo "<p style='color: red;'>Check Your Email. It should be @gmail.com, @hotmail.com, or @cmu.ac.th</p>";
                         $hasErrors = true;
                     } elseif ($check_number == 0) {
-                        echo "<p style='color: red;'>Check Your Number. It should be 10 digits long.</p>";
+                        echo "<p style='color: red;'>Check Your Phone Number. It should be 10 digits long.</p>";
                         $hasErrors = true;
                     } elseif ($check_code == 0) {
                         echo "<p style='color: red;'>Check Your Code. It should be more than 5 characters.</p>";
@@ -107,7 +107,7 @@
                         echo "<tr><td>Name  :  </td><td>" .$name . "</td><tr>";
                         echo "<tr><td>Email  :  </td><td> " .$email . "</td><tr>";
                         echo "<tr><td>Address  :  </td><td> " .$add. "</td><tr>";
-                        echo "<tr><td>Number  :  </td><td> " .$number. "</td><tr>";
+                        echo "<tr><td>Phone Number  :  </td><td> " .$number. "</td><tr>";
                         echo "<tr><td>Code  :  </td><td> " .$code. "</td><tr>";
                         echo "<tr><td>Payment :  </td><td> " .$payment. "</td><tr></table>";
                     }

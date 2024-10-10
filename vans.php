@@ -108,7 +108,6 @@
                             'price' => 4190,
                             'link' => 'online_shoping/img_vans2/',
                         ]
-                        // Add more shoes as needed
                     ];
 
                     // Loop through shoes array and generate HTML

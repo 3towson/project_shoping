@@ -27,7 +27,7 @@
             <div class="column">
                 <div class="column-left">
                     <?php
-                    // Combined array of Nike and Converse shoes
+
                     $shoes = [
 
                         "nike" =>[                        
@@ -101,7 +101,7 @@
                     ];
 
                     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-                        $totalPrice = 0; // Initialize total price
+                        $totalPrice = 0; 
                         $shoes_data = [];
                         if ($_POST['brand']== "nike"){
                             $shoes_data = $shoes["nike"];                        
@@ -183,10 +183,10 @@
                             }
                         }
 
-                        // Display total price
-                        echo "<h3>Price before discount: ฿" . number_format($totalPrice) . "</h3>";
-                        echo "<h3>Discount: ฿" . number_format($disc_totalPrice) . "</h3>";
-                        echo "<h1>Total Price: ฿" . number_format($totalPrice - $disc_totalPrice) . "</h1>";
+                                    // Display total price
+                                    echo "<h3>Price before discount: ฿" . number_format($totalPrice) . "</h3>";
+                                    echo "<h3>Discount: ฿" . number_format($disc_totalPrice) . "</h3>";
+                                    echo "<h1>Total Price: ฿" . number_format($totalPrice - $disc_totalPrice) . "</h1>";
                     }
                     ?>
                 </div>

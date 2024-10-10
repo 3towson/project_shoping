@@ -108,7 +108,6 @@
                             'price' => 4500,
                             'link' => 'online_shoping/img_puma2/',
                         ]
-                        // Add more shoes as needed
                     ];
 
                     // Loop through shoes array and generate HTML

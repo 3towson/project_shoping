@@ -108,7 +108,6 @@
                             'price' => 3400,
                             'link' => 'online_shoping/img_converse2/',
                         ],
-                        // Add more shoes as needed
                     ];
 
                     // Loop through shoes array and generate HTML

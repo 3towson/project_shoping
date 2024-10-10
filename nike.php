@@ -20,7 +20,7 @@
                 </a>
             </div>
         </nav>
-
+        <!-- Promotion -->
         <div class="columns is-full" style="padding: 2rem 0rem 0rem; text-align: center;" >
             <div class="column">
                 <p>Promotions <br>
@@ -101,7 +101,6 @@
                             'price' => 4500,
                             'link' => 'online_shoping/img_nike2/',
                         ],
-                        // Add more shoes as needed
                     ];
 
                     // Loop through shoes array and generate HTML
